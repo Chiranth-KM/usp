@@ -1,0 +1,62 @@
+
+#include <stdio.h>
+#include<unistd.h>
+
+int main() {
+    
+    #ifdef _POSIX_ASYNCHRONUS_IO
+    printf("supported");
+    #endif
+    
+    #ifdef _POSIX_SYNCHRONIZED_IO
+    printf("supported");
+    #endif
+    
+    #ifdef _POSIX_BARRIERS
+    printf("supported");
+    #endif
+    
+    #ifdef _POSIX_CLOCK_STATE
+    printf("supported");
+    #endif
+    
+    #ifdef _POSIX_CPU_TIME
+    printf("supported");
+    #endif
+    
+    #ifdef _POSIX_IPV6
+    printf("supported");
+    #endif
+    
+    #ifdef _POSIX_TIMERS
+    printf("supported");
+    #endif
+    
+    #ifdef _POSIX_THREADS
+    printf("supported");
+    #endif
+    
+    #ifdef _POSIX_TIMEOUTS
+    printf("supported");
+    #endif
+    
+    #ifdef _POSIX_SHELL
+    printf("supported");
+    #endif
+    
+    #ifdef _POSIX_SEMAPHORE
+    printf("supported");
+    #endif
+
+#ifdef _POSIX_MESSAGE_PASSING
+    printf("supported");
+    #endif
+
+#ifdef _POSIX_SAVED_IDS
+    printf("supported");
+    #endif
+    
+    
+
+    return 0;
+}
